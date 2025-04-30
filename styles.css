@@ -1,0 +1,292 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__caixa{
+margin: 0 6em;
+
+}
+
+.secundario__imagem{
+width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.terciario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.p__terc{
+    margin-bottom: 1em;
+}
+
+.botao_terciario{
+   display:inline-block;
+}
+
+.quarta{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.quinta{
+    height: 80vh;
+    display: grid;
+    font-family: var(--fonte-principal);
+}
+
+.tituloh4{
+    font-size: 48px;
+    text-align: center;
+}
+
+.quinta__formatacao{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    font-size: 32px;
+    color: var(--branco-principal);
+    margin: 0 18%;
+}
+
+.rodape{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin: 0 10%;
+
+}
+
+.rodape__bloco{
+
+
+    display: flex;
+    gap: 1em;
+    margin: 2.5em 3.16% 1.5em 3.16%;
+    justify-content: center;
+
+}
+
+.rodape__bloco a {
+    text-decoration: none;
+    color: var(--branco-principal); 
+    font-size: 16px;
+}
+
+.rodape__bloco a:hover{
+    color: var(--botao-azul);
+}
+.rodape__bloco a:active{
+    color: rgb(23, 219, 226);
+}
+
+
+.info__rodape{
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    padding-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        height: 30vh;
+    }
+    
+    .container__imagem{
+        margin: 0.5em 0 1em 0;
+        width: 140px;
+    }
+    
+    .container__botao {
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 10px;
+    }
+    
+    .botao_secundario {
+        border: 1px solid var(--branco-principal)
+    }
+    
+    .container__aviso {
+        font-size: 8px;
+    }
+    
+    .container__titulo {
+        font-size: 14px;
+        font-weight: 500;
+    }
+        
+    .container__caixa{
+    margin: 0 1em;
+    
+    }
+    
+    .secundario__imagem{
+    width: 80%;
+    }
+    
+    .secundario{
+        margin: 0 5em;
+    }
+    .descricao__titulo{
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 0.1em;
+    }
+    .descricao__texto{
+        font-size: 10px;
+    }
+    
+    .terciario{
+        margin: 0 5em;
+    }
+    
+    .p__terc{
+        margin-bottom: 0.5em;
+    }
+    
+    .botao_terciario{
+       font-size: 10px;
+    }
+    
+    .quarta{
+        margin: 0 5em;
+    }
+    
+    .quinta{
+        height: 40vh;
+        word-break: break-word;
+    }
+
+    .quinta__tv__img{
+        width:100px;
+    }
+
+    .quinta__tv{
+        font-size: 10px;
+    }
+    .quinta__pc{
+        font-size: 10px;
+    }
+    .quinta__cel{
+        font-size: 10px;
+    }
+    
+    .quinta__pc__img{
+        width:100px;
+    }
+
+    .quinta__cel__img{
+        width:100px;
+    }
+    
+    .tituloh4{
+        font-size: 18px;
+    }
+    
+    .quinta__formatacao{
+        font-size: 16px;
+        margin: 0 18%;
+    }
+    
+    .rodape{
+        margin: 0 10%;
+        margin-top: 40px;
+        }
+    .rodape__img{
+        width: 50px;
+    }
+    
+    .rodape__bloco{
+        gap: 1.5em;
+        margin: 7.5em 1.0% 1.5em 1.0%;
+        font-size: 1px;
+        font-weight: 400;
+        word-break: normal;
+    
+    }
+    
+    .rodape__bloco a {
+        font-size: 7px;
+        padding-bottom: 10px;
+    }
+    
+    .info__rodape{
+        font-size: 7px;
+        padding-bottom: 1.4em;
+    }
+}
